@@ -28,6 +28,9 @@ public class MyConfiguration_Value {
     @Value("${com.example.demo.index:null}")
     private List<String> index;
 
+    @Value("${spring.profiles.active:null}")
+    private String profiles;
+
 //    @Override
 //    public String toString() {
 //        return "MyConfiguration_Value [name=" + name + ", version=" + version + ", listName=" + listName + "]";
