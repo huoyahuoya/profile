@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.profile;
 
 
 import lombok.Getter;
@@ -13,7 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-@ConfigurationProperties(prefix="com.example.demo")
+@ConfigurationProperties(prefix="com.example.demo.profile")
 public class MyConfiguration_Properties {
 
     private String name;

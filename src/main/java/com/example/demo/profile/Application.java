@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.profile;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +14,6 @@ public class Application {
         MyConfiguration_Properties myConfiguration_Properties = context.getBean(MyConfiguration_Properties.class);
         System.out.println(myConfiguration_Properties.toString());
 
-        context.close();
+//        context.close();
     }
 }

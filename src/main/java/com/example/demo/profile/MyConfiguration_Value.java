@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.profile;
 
 
 import lombok.Getter;
@@ -16,23 +16,19 @@ import java.util.List;
 public class MyConfiguration_Value {
 
     //@Value默认要有配置项，配置项可以为空，若没有配置项要指定默认值，:后的boot为默认值
-    @Value("${com.example.demo.name:boot}")
+    @Value("${com.example.demo.profile.name:boot}")
     private String name;
 
-    @Value("${com.example.demo.version:0.0.0}")
+    @Value("${com.example.demo.profile.version:0.0.0}")
     private String version;
 
-    @Value("${com.example.demo.listName:null}")
+    @Value("${com.example.demo.profile.listName:null}")
     private List<String> listName;
 
-    @Value("${com.example.demo.index:null}")
+    @Value("${com.example.demo.profile.index:null}")
     private List<String> index;
 
-    @Value("${spring.profiles.active:null}")
+    @Value("${com.example.demo.profile.index:null}")
     private String profiles;
 
-//    @Override
-//    public String toString() {
-//        return "MyConfiguration_Value [name=" + name + ", version=" + version + ", listName=" + listName + "]";
-//    }
 }
